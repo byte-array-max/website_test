@@ -4,7 +4,10 @@
     <script>
       function run() 
       {
-        alert("e")
+        var http = new XMLHttpRequest();
+        http.open("GET", "https://receive-test.bruhmoment43.repl.co", false);
+        http.send();
+        alert(http.responseText);
       }
     </script>
   </body>
